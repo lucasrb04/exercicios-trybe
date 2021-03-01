@@ -1,8 +1,8 @@
 let aliquotaInss;
 let aliquotaIr;
-let salarioBase;
-let salarioLiquido;
-let salarioBruto = 2000;
+
+let salarioBruto = 3000;
+
 if (salarioBruto > 5189.82) {
   aliquotaInss = 570.88;
 } else if (salarioBruto >= 2594.93) {
@@ -11,8 +11,10 @@ if (salarioBruto > 5189.82) {
   aliquotaInss = 0.09 * salarioBruto;
 } else {
   aliquotaInss = 0.08 * salarioBruto;
-}
-salarioBase = salarioBruto - aliquotaInss;
+};
+
+let salarioBase = salarioBruto - aliquotaInss;
+
 if (salarioBase > 4664.68) {
   aliquotaIr = (salarioBase * 0.275) - 869.36;
 } else if (salarioBase > 3751.06) {
@@ -23,6 +25,7 @@ if (salarioBase > 4664.68) {
   aliquotaIr = (salarioBase * 0.075) - 142.80;
 } else {
   aliquotaIr = 0;
-}
-salarioLiquido = salarioBase - aliquotaIr;
-console.log(salarioLiquido);
+};
+
+let salarioLiquido = salarioBase - aliquotaIr;
+console.log("O salário é: " + salarioLiquido + " reais");

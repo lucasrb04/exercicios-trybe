@@ -1,5 +1,5 @@
-let chessPiece = "bishop";
-chesspiece = chessPiece.toLowerCase
+let chessPiece = "QUEEN";
+chessPiece = chessPiece.toLowerCase()
 switch (chessPiece) {
   case "bishop":
     console.log("Bishop -> Diagonals")

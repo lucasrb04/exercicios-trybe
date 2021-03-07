@@ -1,9 +1,8 @@
-let number1 = 1;
-let number2 = 1;
-let number3 = -1;
-let isEven = number1 % 2 == 0 || number2 % 2 == 0 || number3 % 2 == 0;
-if (isEven) {
-  console.log(true)
-} else {
-  console.log(false)
+function isEven(num1, num2, num3) {
+  isEven = num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0;
+  if (isEven) {
+    return (true)
+  } else {
+    return (false)
+  }
 }

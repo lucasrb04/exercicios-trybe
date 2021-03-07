@@ -1,3 +1,3 @@
-let numero1 = 5;
-let numero2 = 3;
-console.log(numero1%numero2)
+function moduloOperacoesMatematicas(numero1, numero2) {
+    return (numero1%numero2)
+}

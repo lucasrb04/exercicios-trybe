@@ -1,4 +1,4 @@
-let n = 5;
+let n = 8;
 for (let index = 0; index < n; index++) {
   let quadrado = '*';
   console.log(quadrado.repeat(n));
@@ -9,11 +9,11 @@ for (let index = 0; index < n; index++) {
   console.log(trianguloEsq);
 }
 
-let space = '    '
+let space = ' '
 let trianguloDir = ''
 let ast = '';
-for (let indexSpace = 0; indexSpace < 5; indexSpace += 1) {
-    ast += '*';
-    trianguloDir = space.slice(indexSpace) + ast ;
-    console.log(trianguloDir);
+for (let indexSpace = 0; indexSpace < n; indexSpace += 1) {
+  ast += '*';
+  trianguloDir = space.repeat(n-1).slice(indexSpace) + ast;
+  console.log(trianguloDir);
 }

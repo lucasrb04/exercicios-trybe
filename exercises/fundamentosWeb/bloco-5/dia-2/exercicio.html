@@ -78,6 +78,39 @@
       let createRightDiv = document.createElement('div');
       createRightDiv.className = 'right-content';
       mainDiv.appendChild(createRightDiv);
+
+      const leftDiv = document.querySelector('.left-content');
+      const createImgElement = document.createElement('img');
+      createImgElement.src = "https://picsum.photos/200";
+      createImgElement.className = 'small-image';
+      leftDiv.appendChild(createImgElement);
+
+      const rightDiv = document.querySelector('.right-content');
+      const createULElement = document.createElement('ul');
+      rightDiv.appendChild(createULElement);
+      const uList = document.querySelector('ul')
+      const list = ['um', 'dois', 'três', 'quatro','cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let index = 0; index < list.length; index++) {
+        const createLIElement = document.createElement('li');
+        createLIElement.innerText = list[index]
+        uList.appendChild(createLIElement)
+      }
+      for (let index = 0; index < 3; index++) {
+        const h3 = document.createElement('h3');
+        mainDiv.appendChild(h3);
+      }
+      document.querySelector('h1').classList.add('title');
+      for (let index = 0; index < 3; index++) {
+        document.querySelectorAll('h3')[index].classList.add('description')
+      }
+      mainDiv.removeChild(document.querySelector('.left-content'))
+      rightDiv.style.marginRight = "auto";
+      centerDiv.parentElement.style.backgroundColor = 'green'
+      for (let index = 0; index < 2; index++) {
+        uList.lastElementChild.remove()
+        
+      }
+
     </script>
   </body>
 </html>

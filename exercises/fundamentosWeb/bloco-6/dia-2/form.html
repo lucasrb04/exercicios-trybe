@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+  <title>Document</title>
+  <style>
+    body {
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section is-medium">
+    <h2>Fomulário exemplo</h2>
+    <div class="field">
+      <div class="control">
+        <form action="" method="get">
+          <div>
+            <p>Dados Pessoais</p>
+            <label for="input-nome"></label> Nome completo:
+            <input class="input" type="text" name="nome" id="input-nome" required maxlength="40"
+              placeholder="Digite seu nome">
+            <br>
+            <label for="input-email"></label> E-mail:
+            <input class="input" type="email" name="email" id="input-email" required maxlength="50"
+              placeholder="Digite seu e-mail">
+            <br>
+            <label for="input-cpf"></label> CPF:
+            <input class="input" type="text" name="cpf" id="input-cpf" required maxlength="11"
+              placeholder="Digite seu cpf">
+            <br>
+            <label for="input-endereco"></label> Logradouro:
+            <input class="input" type="text" name="endereco" id="input-endereco" required maxlength="200"
+              placeholder="Digite seu endereço">
+            <br>
+            <label for="input-cidade"></label> Cidade:
+            <input class="input" type="text" name="cidade" id="input-cidade" required maxlength="28"
+              placeholder="Digite sua cidade">
+            <br>
+            <div class="field">
+              <label class="label" for="input-estado">Estado onde você mora:</label>
+              <div class="control">
+                <div class="select is-rounded is-small">
+                  <select class="" name="estado" id="input-estado"></select>
+                </div>
+              </div>
+            </div>
+            <br>
+            <label class="control" for="input-apartamento">
+              <input class="radio" type="radio" name="tipo" required id="input-apartamento">Apartamento
+            </label>
+            
+            <label class="control" for="input-casa">
+              <input class="radio" type="radio" name="tipo" id="input-casa">Casa
+            </label>
+          </div>
+          <hr>
+          <div>
+            <legend>Dados Profissionais</legend>
+            <p>Resumo do Currículo:</p>
+            <textarea class="textarea is-field" name="resumo" id="input-resumo" maxlength="1000"
+              placeholder="Digite um resumo de até 1000 caracteres." required cols="30" rows="10"></textarea>
+            <br>
+            <label for="input-cargo"></label> Cargo:
+            <input class="input" type="text" name="cargo" id="input-cargo" required maxlength="40"
+              placeholder="Digite seu cargo">
+            <br>
+            <label for="input-descricao-cargo"></label> Descrição do cargo:
+            <input class="input" type="text" name="descricao-cargo" id="input-descricao-cargo" required maxlength="500"
+              placeholder="descreve seu cargo">
+            <br>
+            <label for="datepicker"></label>
+            <input class="input" type="date" name="data" required id="datepicker">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <script src="pikaday.js"></script>
+</body>
+
+</html>

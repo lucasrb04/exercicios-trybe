@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="input-nome"></label> Nome completo:
+      <input type="text" name="nome" id="input-nome" required maxlength="40" placeholder="Digite seu nome">
+      <br>
+      <label for="input-email"></label> E-mail:
+      <input type="email" name="email" id="input-email" required maxlength="50" placeholder="Digite seu e-mail">
+      <br>
+      <label for="input-cpf"></label> CPF:
+      <input type="text" name="cpf" id="input-cpf" required maxlength="11" placeholder="Digite seu cpf">
+      <br>
+      <label for="input-endereco"></label> Logradouro:
+      <input type="text" name="endereco" id="input-endereco" required maxlength="200" placeholder="Digite seu endereço">
+      <br>
+      <label for="input-cidade"></label> Cidade:
+      <input type="text" name="cidade" id="input-cidade" required maxlength="28" placeholder="Digite sua cidade">
+      <br>
+      <label for="input-estado">Estado onde você mora:
+        <select name="estado" id="input-estado"></select>
+      </label>
+      <br>
+      <label for="input-apartamento">
+        <input type="radio" name="tipo" required id="input-apartamento">Apartamento
+      </label>
+      <br>
+      <label for="input-casa">
+        <input type="radio" name="tipo" id="input-casa">Casa
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Dados Profissionais</legend>
+      <p>Resumo do Currículo:</p>
+      <textarea name="resumo" id="input-resumo" maxlength="1000" placeholder="Digite um resumo de até 1000 caracteres." required cols="30" rows="10"></textarea>
+      <br>
+      <label for="input-cargo"></label> Cargo:
+      <input type="text" name="cargo" id="input-cargo" required maxlength="40" placeholder="Digite seu cargo">
+      <br>
+      <label for="input-descricao-cargo"></label> Descrição do cargo:
+      <input type="text" name="descricao-cargo" id="input-descricao-cargo" required maxlength="500" placeholder="descreve seu cargo">
+      <br>
+      <label for="data-inicio"></label>
+      <input type="date" name="data" required id="data-inicio">
+    </fieldset>
+    
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

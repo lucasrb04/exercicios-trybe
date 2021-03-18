@@ -30,6 +30,7 @@ function createDaysOfTheMonth () {
   }
 }
 createDaysOfTheMonth();
+
 function holidays(Feriados) {
   const placeHolidaybtn = document.querySelector(".buttons-container");
   const holidaybtn = document.createElement('button');
@@ -38,3 +39,27 @@ function holidays(Feriados) {
   placeHolidaybtn.appendChild(holidaybtn)
 }
 holidays ()
+let count = 1;
+function changeColorHoliday() {
+  const holidays = document.querySelectorAll('.holiday');
+  count += 1;
+  for (let index = 0; index < holidays.length; index++) {
+    if (count % 2 === 0) {
+      holidays[index].style.color = "red";
+    } else {
+      holidays[index].style.color = "rgb(119,119,119)";
+    }
+  }
+}
+const holidaybtn = document.querySelector('#btn-holiday')
+holidaybtn.addEventListener("click", changeColorHoliday);
+
+function friday(Feriados) {
+  const placeHolidaybtn = document.querySelector(".buttons-container");
+  const fridaybtn = document.createElement('button');
+  fridaybtn.id = "btn-friday";
+  fridaybtn.innerText = "Sexta-feira";
+  placeHolidaybtn.appendChild(fridaybtn)
+}
+friday()
+

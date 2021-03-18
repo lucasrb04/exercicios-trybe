@@ -33,3 +33,5 @@ for (key in estados) {
   itemEstado.innerText = estados[key];
   caixaEstados.appendChild(itemEstado);
 }
+
+var picker = new Pikaday({ field: document.getElementById('datepicker') });

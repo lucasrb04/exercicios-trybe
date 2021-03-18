@@ -7,10 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
   <title>Document</title>
+  <style>
+    body {
+      max-width: 800px;
+      width: 100%;
+      margin: auto;
+    }
+  </style>
 </head>
 
 <body>
   <section class="section is-medium">
+    <h2>Fomulário exemplo</h2>
     <div class="field">
       <div class="control">
         <form action="" method="get">
@@ -68,14 +76,15 @@
             <input class="input" type="text" name="descricao-cargo" id="input-descricao-cargo" required maxlength="500"
               placeholder="descreve seu cargo">
             <br>
-            <label for="data-inicio"></label>
-            <input class="input" type="date" name="data" required id="data-inicio">
+            <label for="datepicker"></label>
+            <input class="input" type="date" name="data" required id="datepicker">
           </div>
         </form>
       </div>
     </div>
   </section>
   <script src="script.js"></script>
+  <script src="pikaday.js"></script>
 </body>
 
 </html>

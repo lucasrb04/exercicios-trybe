@@ -97,3 +97,57 @@ function dayMouseOut() {
 
 dayMouseOver();
 dayMouseOut();
+
+// function addTask() {
+//   let btn = document.querySelector('#btn-add')
+//   btn.addEventListener('click', function () {
+//     const createSpan = document.createElement('span');
+//     const createBr = document.createElement('br');
+//     task = document.querySelector('#task-input')
+//     createSpan.innerHTML = task.value ;
+//     document.querySelector('.my-tasks').appendChild(createSpan);
+//     document.querySelector('.my-tasks').appendChild(createBr);
+//     task.value = "";
+//   });
+// }
+// addTask()
+function newTaskSpan(task) {
+
+  let tasksContainer = document.querySelector('.my-tasks');
+  let taskName = document.createElement('span');
+
+  taskName.innerHTML = task;
+  tasksContainer.appendChild(taskName);
+};
+
+newTaskSpan('Projeto:');
+
+function addNewTask() {
+  let getInputField = document.querySelector('#task-input');
+  let addInputButton = document.querySelector('#btn-add');
+  let getTaskList = document.querySelector('.task-list');
+
+  addInputButton.addEventListener('click', function() {
+    if (getInputField.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerText = getInputField.value;
+
+      getTaskList.appendChild(newLi);
+      getInputField.value = '';
+    } else {
+      alert('Error: Digite ao menos 1 caractere.');
+    }
+  })
+
+  getInputField.addEventListener('keyup', function(event) {
+    if (event.keyCode === 13 && getInputField.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerText = getInputField.value;
+
+      getTaskList.appendChild(newLi);
+      getInputField.value = '';
+    }
+  });
+};
+
+addNewTask();

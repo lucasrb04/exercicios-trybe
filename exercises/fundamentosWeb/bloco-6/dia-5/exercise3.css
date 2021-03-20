@@ -16,10 +16,11 @@
 #navigation {
   float: left;
   width: 100%;
-  background: #333;
+
 }
 
 #navigation ul {
+  background: #333;
   margin: 0;
   padding: 0;
 }
@@ -88,4 +89,54 @@
     float: none;
     display: block;
   }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+  }
+  p {
+    font-size: 20px;
+  }
+ #aside {
+   display:none;
+ }
+ #content {
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   padding: 0;
+   margin: auto;
+   /* max-width: 90%; */
+   /* margin-right:100px ; */
+ }
+ img {
+   width: 100%;
+ }
+ #navigation ul { 
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+ }
+ #navigation ul li {
+  margin: auto;
+}
+ #navigation ul li a {
+   text-align: center;
+  border-right: none;
+ }
+ #navigation {
+  margin-top: 77px;
+ }
+ #header {
+   width: 337.5px;
+   position: fixed;
+   padding: 20px 0;
+   text-align: center;
+ }
+ #footer {
+   text-align: center;
+ }
 }

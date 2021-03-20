@@ -16,11 +16,11 @@
 #navigation {
   float: left;
   width: 100%;
-
+  background: #333;
 }
 
 #navigation ul {
-  background: #333;
+
   margin: 0;
   padding: 0;
 }

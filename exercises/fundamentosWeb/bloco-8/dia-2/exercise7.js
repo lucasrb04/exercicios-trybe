@@ -27,7 +27,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Isaac Asimov',
-      birthYear: 1920,
+      birthYear: 192,
     },
     releaseYear: 1951,
   },
@@ -57,19 +57,18 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'H. P. Lovecraft',
-      birthYear: 1947,
+      birthYear: 194,
     },
     releaseYear: 1928,
   },
 ];
 
 const expectedResult = false;
-
 function authorUnique() {
   return books.every((book) =>
-    !books.some((bookSome) =>
-      (bookSome.author.birthYear === book.author.birthYear)
-      && (bookSome.author.name !== book.author.name)));
+  !books.some((bookSome) =>
+    (bookSome.author.birthYear === book.author.birthYear)
+    && (bookSome.author.name !== book.author.name)));
 }
 
 assert.strictEqual(authorUnique(), expectedResult);

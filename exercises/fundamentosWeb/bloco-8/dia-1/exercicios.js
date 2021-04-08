@@ -41,7 +41,7 @@ const compare = (betNumber, winnerNumber) => {
 sort(3, compare)
 
 const answersCheck = (correctAnwer) => (userAnswer) => correctAnwer.toLowerCase() == userAnswer.toLowerCase();
-console.log(answersCheck('A resposta é a letra B')('a resposta é a letra a'));
+console.log(answersCheck('A resposta é a letra A')('a resposta é a letra a'));
 // true
 
 const testResult = (correctAnwer, studantAnswer, checkFunction) => {

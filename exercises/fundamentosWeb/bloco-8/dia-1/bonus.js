@@ -58,4 +58,4 @@ const gameActions = {
     return battleMembers
   }
 }
-console.log(gameActions.newTurn())
+console.log(mageDamage)

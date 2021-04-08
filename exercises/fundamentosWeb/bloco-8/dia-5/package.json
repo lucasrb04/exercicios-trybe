@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "eslint": "^7.23.0"
+  },
+  "name": "dia-5",
+  "version": "1.0.0",
+  "main": "defaultDestructing.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

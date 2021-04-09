@@ -91,7 +91,7 @@ const expectedResult = [
 ];
 
 function nameAndAge() {
-  let authorObj = books.map(book => ( { ['age']: (book.releaseYear - book.author.birthYear),['author']: book.author.name } ));
+  let authorObj = books.map(book => ( { age: (book.releaseYear - book.author.birthYear), author: book.author.name } ));
   authorObj.sort((author1, author2) => author1.age - author2.age);
   return authorObj
 }

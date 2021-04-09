@@ -64,16 +64,25 @@ const books = [
 ];
 
 function smallerName() {
-  // escreva aqui o seu código
   let nameBook;
   books.forEach(book => {
-    if(!nameBook || book.name.length < nameBook.length) {
-      nameBook = book.name
+    if (!nameBook || book.name.length < nameBook.length) {
+      nameBook = book.name;
     }
   });
-  // Variável nameBook que receberá o valor do menor nome;
   return nameBook;
 }
 
 assert.strictEqual(smallerName(), 'Duna');
- 
+
+// function smallerName() {
+//   // escreva aqui o seu código
+//   let nameBook;
+//   books.forEach(book => {
+//     if(!nameBook || book.name.length < nameBook.length) {
+//       nameBook = book.name
+//     }
+//   });
+//   // Variável nameBook que receberá o valor do menor nome;
+//   return nameBook;
+// }

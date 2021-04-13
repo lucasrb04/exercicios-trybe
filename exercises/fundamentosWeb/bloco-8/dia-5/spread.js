@@ -10,7 +10,7 @@ const specialFruit = ['morango', 'abacaxi', 'laranja'];
 const additionalItens = ['aveia', 'açucar', 'granola'];
 
 const fruitSalad = (...args) => {
-  return [...args]
+  return {...args}
 };
 
 console.log(fruitSalad(...specialFruit, ...additionalItens));

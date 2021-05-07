@@ -4,8 +4,7 @@ const Animals = [
   { name: 'Preguiça', age: 5, type: 'Cat' },
 ];
 
-const findAnimalsByType = async (type) => (
-  await
+const findAnimalsByType = (type) => (
   new Promise((resolve, reject) => {
     setTimeout(() => {
       const arrayAnimals = Animals.filter((animal) => animal.type === type);
@@ -23,11 +22,20 @@ const getListAnimals = (type) => (
 );
 
 const findAnimalByName = (name) => (
-  // Adicione o código aqui.
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const arrayAnimals = Animals.find((animal) => animal.name === name);
+      if (arrayAnimals.length !== 0) {
+        return resolve(arrayAnimals);
+      };
+
+      return reject({ error: 'Nenhum animal com esse nome!' });
+    }, 100);
+  })
 );
 
-const getAnimal = (name) => {
-  // Adicione o código aqui.
+const getAnimal = (animal) => {
+  findAnimalsByType(animal).then(list => list)
 };
 // ---------------------
 

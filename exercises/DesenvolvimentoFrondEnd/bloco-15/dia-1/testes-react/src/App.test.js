@@ -34,6 +34,7 @@ test('Verifica que há dois botões', () => {
 test('Verificando se existe um botão de enviar', () => {
   const { getByTestId } = render(<App />);
   const btn = getByTestId('id-send');
+  console.log(btn);
   expect(btn).toBeInTheDocument();
   expect(btn.type).toBe('button');
   expect(btn).toHaveValue('Enviar');

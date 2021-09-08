@@ -1,0 +1,2 @@
+use ("conteudo_trybe");
+db.tags.find()

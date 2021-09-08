@@ -1,0 +1,5 @@
+use ("agg_examples");
+db.transactions.find()
+db.transactions.aggregate(
+  [{ $match : { value: {$gt: 700, $lt: 6000} } }]
+);

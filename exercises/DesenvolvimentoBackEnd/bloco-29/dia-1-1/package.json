@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha ./tests/**/*$NAME*.{test,spec}.js --exit",
     "lint": "eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json ."
   },
